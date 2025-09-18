@@ -1,0 +1,18 @@
+- type: entity
+  parent: [ClothingEyesBase, BaseScienceContraband]
+  id: ClothingEyesHudRD
+  name: Silicon-Interfacing HUD
+  description: A heads-up display combining both diagnostic information as well as the ability to communicate in the binary network. Say hi to your station AI!
+  components:
+  - type: Sprite
+    sprite: _Omu/Clothing/Eyes/scidiag.rsi
+  - type: Clothing
+    sprite: _Omu/Clothing/Eyes/scidiag.rsi
+  - type: Tag
+    tags:
+    - HudDiagnostic
+  - type: ClothingGrantCollectiveMind
+    minds:
+    - Binary
+    defaultChannel: Binary
+

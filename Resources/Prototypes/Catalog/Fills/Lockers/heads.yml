@@ -463,14 +463,13 @@
     - id: ComputerCargoRequestScienceFlatpack # Goobstation
     - id: RubberStampRd
     # - id: EncryptionKeyBinary # goobstation - readd the cool binary channel access. fuck you. # Goobstation - WYCI + malf ai major
-    - id: BinaryImplanter # OmuStation start - Be saucy with the silicons
-      amount: 2 # OmuStation end - Bring your friend too!
     - id: AnomalyLocator # GoobStation - adding anomaly locator to the RD locker to reduce the amount of anoms that crit
     - id: CigarCase
       prob: 0.15 # GoobStation - RD needs cigs for uhh... science...
     - id: ScienceTechFabCircuitboard # Goobstation - Science Techfab
     - id: ClothingBeltGeminiHoloProjector # Goobstation - Who better to do science with than yourself?
     - id: MMI # Goobstation
+    - id: ClothingEyesHudRD # Omustation - HUD that lets RD talk in binary hivemind!
 
 # Hardsuit table, used for suit storage as well
 - type: entityTable
