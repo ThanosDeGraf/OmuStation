@@ -166,6 +166,18 @@
       - Shard
   - type: SpeedModifierImmunity
   - type: Rootable
+  - type: SolutionContainerManager
+    solutions:
+      soil:
+        maxVol: 200
+  - type: PlantHolder
+    drawWarnings: true
+    wateringSound:
+      path: /Audio/Effects/Fluids/slosh.ogg
+      params:
+        volume: -8
+        variation: 0.25
+
 
 - type: entity
   parent: BaseSpeciesDummy

@@ -70,6 +70,7 @@ using Content.Shared.Chemistry.Reagent;
 using Content.Shared.Database;
 using Content.Shared.EntityEffects;
 using Content.Goobstation.Maths.FixedPoint;
+using Content.Server.Botany.Components;
 using Content.Shared.Mobs.Components;
 using Content.Shared.Mobs.Systems;
 using Robust.Shared.Collections;
@@ -267,6 +268,12 @@ namespace Content.Server.Body.Systems
                     var actualEntity = ent.Comp2?.Body ?? solutionEntityUid.Value;
                     var args = new EntityEffectReagentArgs(actualEntity, EntityManager, ent, solution, mostToRemove, proto, null, scale);
 
+                    if (TryComp<PlantHolderComponent>(actualEntity, out var plant) && plant.SoilSolution is not null && ( solution.Name!.Equals("chemicals")))
+                    {
+                        _solutionContainerSystem.TryAddReagent((Entity<SolutionComponent>)plant.SoilSolution!,reagent.Prototype,mostToRemove);
+                    }
+                    //var ev = new ReagentMetabolizedEvent(y)
+                    //RaiseLocalEvent();
                     // do all effects, if conditions apply
                     foreach (var effect in entry.Effects)
                     {
