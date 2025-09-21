@@ -470,7 +470,7 @@
     - id: ClothingBeltGeminiHoloProjector # Goobstation - Who better to do science with than yourself?
     - id: ClothingEyesGlassesSciDiag # Omustation - HUD that lets RD talk in binary hivemind!
     - id: MMI # Goobstation
-    - id: ClothingEyesHudRD # Omustation - HUD that lets RD talk in binary hivemind!
+    - id: ClothingEyesHudSciDiag # Omustation - HUD that lets RD talk in binary hivemind!
 
 # Hardsuit table, used for suit storage as well
 - type: entityTable
