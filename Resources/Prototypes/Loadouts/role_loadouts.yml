@@ -527,11 +527,12 @@
   - ResearchDirectorHead
   - ResearchDirectorNeck
   - ResearchDirectorJumpsuit
+  - ResearchDirectorEyewear # Omustation
   - ScientistBackpack
   - ResearchDirectorOuterClothing
   - ScientistGloves
   - ResearchDirectorShoes
-  - Glasses
+  # - Glasses
   - Survival
   - Trinkets
   - Animals
