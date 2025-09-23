@@ -36,9 +36,9 @@
   - type: GunSpreadModifier
     spread: 2
 
-- type: entity # Todo: Either fix revolvers being unwieldy to use without speedloaders, or move this to \Guns\Shotguns\ #Todo: Also Shotguns have bolt-open sprites, but dont get used
+- type: entity
   name: R6 "Slammer" Trench Gun
-  parent: [BaseWeaponShotgun, BaseGunWieldable, BaseGrandTheftContraband]
+  parent: [BaseWeaponRevolver, BaseGunWieldable, BaseGrandTheftContraband]
   id: WeaponWardenRevolverShotgun
   description: The semi-automatic R6 trench gun, designed for clearing corners with a war zone appropriate amount of 8-gauge-"die now", has become popular as a defensive and breaching option among law enforcement.
   components:
@@ -59,7 +59,7 @@
     - SemiAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/shotgun.ogg
-  - type: BallisticAmmoProvider
+  - type: RevolverAmmoProvider
     whitelist:
       tags:
       - ShellShotgunHeavy
@@ -77,6 +77,10 @@
     spread: 2
   - type: StealTarget
     stealGroup: WeaponEnergyShotgun
+  - type: MeleeWeapon
+    damage:
+      types:
+        Blunt: 12 # fat pistol whip
 
 - type: entity
   name: T8 "Consistency" Revolver
