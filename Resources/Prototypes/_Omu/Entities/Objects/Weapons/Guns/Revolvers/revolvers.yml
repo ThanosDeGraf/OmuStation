@@ -77,6 +77,10 @@
     spread: 2
   - type: StealTarget
     stealGroup: WeaponEnergyShotgun
+  - type: MeleeWeapon
+    damage:
+      types:
+        Blunt: 12 # fat pistol whip
 
 - type: entity
   name: T8 "Consistency" Revolver
