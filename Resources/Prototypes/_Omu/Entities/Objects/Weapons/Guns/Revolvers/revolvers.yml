@@ -40,7 +40,7 @@
   name: R6 "Slammer" Trench Gun
   parent: [BaseWeaponShotgun, BaseGunWieldable, BaseGrandTheftContraband]
   id: WeaponWardenRevolverShotgun
-  description: The fully automatic R6 trench gun, designed for clearing corners with a war zone appropriate amount of 8-gauge-"die now", has become popular as a defensive and breaching option among law enforcement.
+  description: The semi-automatic R6 trench gun, designed for clearing corners with a war zone appropriate amount of 8-gauge-"die now", has become popular as a defensive and breaching option among law enforcement.
   components:
   - type: Sprite
     sprite: _Omu/Objects/Weapons/Guns/Revolvers/R6.rsi
