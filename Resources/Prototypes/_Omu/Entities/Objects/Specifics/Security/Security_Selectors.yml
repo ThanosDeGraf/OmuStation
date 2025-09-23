@@ -9,11 +9,11 @@
     state: icon
   - type: SetSelector
     possibleSets:
+    - HosLawbringerSet
     - HosSmgSet
     - HosRifleSet
     - HosShotgunSet
     - HosSniperSet
-    - HosLawbringerSet
     maxSelectedSets: 1
   - type: StealTarget
     stealGroup: WeaponEnergyGunLawbringer
