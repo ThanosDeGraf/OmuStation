@@ -525,9 +525,9 @@
   groups:
   - GroupTankHarness
   - ResearchDirectorHead
+  - ResearchDirectorEyewear # Omustation
   - ResearchDirectorNeck
   - ResearchDirectorJumpsuit
-  - ResearchDirectorEyewear # Omustation
   - ScientistBackpack
   - ResearchDirectorOuterClothing
   - ScientistGloves
