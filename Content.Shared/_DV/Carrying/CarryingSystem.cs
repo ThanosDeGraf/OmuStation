@@ -104,6 +104,37 @@ public sealed class CarryingSystem : EntitySystem
         });
     }
 
+    /*private void AddInsertCarriedVerb(EntityUid uid, CarryingComponent component, GetVerbsEvent<InnateVerb> args)
+    {
+        // If the person is carrying someone, and the carried person is a pseudo-item, and the target entity is a storage,
+        // then add an action to insert the carried entity into the target
+        var toInsert = args.Using;
+        var toInsert = component.Carried;
+        if (toInsert is not { Valid: true } || !args.CanAccess
+                                            || !TryComp<PseudoItemComponent>(toInsert, out var pseudoItem)
+                                            || !TryComp<StorageComponent>(args.Target, out var storageComp)
+                                            || !_pseudoItem.CheckItemFits((toInsert.Value, pseudoItem), (args.Target, storageComp)))
+            || !_pseudoItem.CheckItemFits((toInsert, pseudoItem), (args.Target, storageComp)))
+        return;
+
+        InnateVerb verb = new()
+        {
+            Act = () =>
+            {
+                DropCarried(uid, toInsert.Value);
+                _pseudoItem.TryInsert(args.Target, toInsert.Value, pseudoItem, storageComp);
+                if (args.Using is not null)
+                {
+                    _pseudoItem.TryInsert(args.Target, toInsert, pseudoItem, storageComp);
+                    DropCarried(uid, args.Using.Value);
+                }
+            },
+            Text = Loc.GetString("action-name-insert-other", ("target", toInsert)),
+            Priority = 2
+        };
+        args.Verbs.Add(verb);
+    }*/
+
     private void AddInsertCarriedVerb(Entity<CarryingComponent> ent, ref GetVerbsEvent<InnateVerb> args)
     {
         // If the person is carrying someone, and the carried person is a pseudo-item, and the target entity is a storage,
